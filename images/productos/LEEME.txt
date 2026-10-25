@@ -1,0 +1,16 @@
+Guarda aqui una foto por producto con EXACTAMENTE estos nombres (formato jpg):
+
+bolsas-papel.jpg   ->  Bolsas de papel
+cajas-autoarmables.jpg   ->  Cajas autoarmables
+cajas-embalaje.jpg   ->  Cajas de embalaje
+cajas-kraft.jpg   ->  Cajas Kraft
+cajas-duplex.jpg   ->  Cajas dúplex
+cajas-almohada.jpg   ->  Cajas almohada
+bolsas-tela.jpg   ->  Bolsas de tela
+sacos-tela.jpg   ->  Sacos de tela
+bolsas-tnt.jpg   ->  Bolsas de TNT
+sacos-kraft.jpg   ->  Sacos Kraft
+doypacks.jpg   ->  Doypacks
+sobres-kraft.jpg   ->  Sobres Kraft
+
+Recomendado: 800x600 px (horizontal 4:3), menos de 150 KB cada una.

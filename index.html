@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Landing de empaques. Un solo archivo: HTML (estructura), CSS (estilos con variables y modo oscuro) y JS (catálogo, con configuración al inicio del script). -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ideados: bolsas, cajas y sacos con y sin impresión. Elige tu medida y compra en línea o cotiza por WhatsApp.">
+<meta name="theme-color" content="#1f4d3a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Ideados | Catálogo de empaques</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#inicio">Ideados<span>.</span></a>
+<button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
+<nav id="nav" aria-label="Principal"><ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul></nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="hero-showcase" role="region" aria-label="Productos destacados" aria-roledescription="carrusel">
+<div class="showcase-orbit" id="showcase-orbit" aria-label="Productos alrededor de Ideados"></div>
+<button class="showcase-arrow previous" type="button" aria-label="Productos anteriores"></button>
+<div class="showcase-viewport" id="hero-showcase" tabindex="0"></div>
+<button class="showcase-arrow next" type="button" aria-label="Productos siguientes"></button>
+</div>
+<div class="wrap hero-content">
+<p class="eyebrow">Empaques para marcas con ideas</p>
+<h1>Ideados<span>.</span></h1>
+<p>Encuentra bolsas, cajas y sacos para llevar tu negocio más lejos.</p>
+<form class="search" id="search-form" role="search">
+<label class="sr-only" for="product-search">Buscar productos</label>
+<input id="product-search" type="search" placeholder="Busca bolsas, cajas y más" autocomplete="off">
+<button type="submit" aria-label="Buscar">&rarr;</button>
+</form>
+<div class="tabs hero-tabs" role="tablist" aria-label="Tipo de empaque">
+<button class="tab" role="tab" data-cat="sin">Sin impresión</button>
+<button class="tab" role="tab" data-cat="con">Con impresión</button>
+</div>
+</div></section>
+
+<section id="productos"><div class="wrap">
+<h2>Descubre productos</h2>
+<p class="note" id="note"></p>
+<div id="view"></div>
+</div></section>
+
+<section class="about" id="nosotros"><div class="wrap">
+<h2>Qué hacemos</h2>
+<p style="max-width:60ch;color:var(--muted)">Ideados fabrica y vende empaques para negocios: bolsas, cajas y sacos en distintos materiales y medidas, con o sin impresión.</p>
+</div></section>
+
+<section class="contact" id="contacto" style="border-top:0"><div class="wrap">
+<h2>Contacto</h2>
+<p style="color:var(--muted);max-width:60ch">¿Dudas o pedidos grandes? Escríbenos por WhatsApp.</p>
+<a class="btn wa" id="wa-general" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+</div></section>
+</main>
+<footer><div class="wrap">© 2027 Ideados</div></footer>
+<!-- Aviso accesible (role=status) para confirmaciones y errores -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:20px;text-align:center">Activa JavaScript para ver el catálogo.</p></noscript>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
